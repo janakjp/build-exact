@@ -1,0 +1,21 @@
+<form [formGroup]="orderListFormGroup">
+
+  <div class="row">
+    <div class="col-2"></div>
+
+    <div class="col-8">
+      <label for="orderNo">Order Number:</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter Order Number" 
+        formControlName="orderNumber">
+        
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" (click)="detailClick()" type="button">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-2"></div>
+  </div>
+
+</form>
